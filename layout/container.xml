@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cos_height"
+    android:background="@color/back"
+    android:padding="@dimen/padd">
+
+    <TextView
+        android:id="@+id/location_info"
+        android:layout_width="@dimen/tex_width"
+        android:layout_height="@dimen/tex_height"
+        android:layout_marginTop="@dimen/view_mgt"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/tex"
+        android:textSize="@dimen/tex_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/co_width"
+        android:layout_height="@dimen/img_width"
+        android:layout_marginTop="@dimen/name_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_texh"
+        android:layout_marginStart="@dimen/mmrg"
+        android:layout_marginEnd="@dimen/mmrg"
+        android:fontFamily="serif"
+        android:textColor="@color/tex"
+        android:textSize="@dimen/m_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="@dimen/phone"
+        android:layout_height="@dimen/name_height"
+        android:layout_marginTop="@dimen/phone_top"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:text="@string/address"
+        android:textColor="@color/tex"
+        android:textSize="@dimen/add_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/other_info"
+        android:layout_width="@dimen/phone"
+        android:layout_height="@dimen/name_height"
+        android:layout_marginTop="@dimen/phone_top"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:text="@string/phone"
+        android:textColor="@color/tex"
+        android:textSize="@dimen/add_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="@dimen/addii"
+        android:layout_height="@dimen/name_height"
+        android:layout_marginTop="@dimen/padd"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/tex"
+        android:textSize="@dimen/tex_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_info" />
+
+    <View
+        android:layout_width="@dimen/Vi_width"
+        android:layout_height="@dimen/view_h"
+        android:layout_marginStart="@dimen/Vi_start"
+        android:layout_marginEnd="@dimen/Vi_start"
+        android:layout_marginBottom="@dimen/view_h"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
